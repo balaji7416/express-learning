@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        form{
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+  <body>
+    <h2>Send us your Feedback 📝</h2>
+    <form action="/feedback" method="POST">
+      <input type="text" name="name" placeholder="Your name" required /><br/>
+      <textarea name="message" placeholder="Your feedback" required></textarea><br/>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
