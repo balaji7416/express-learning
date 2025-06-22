@@ -1,0 +1,9 @@
+# Ignore all node_modules folders inside subprojects
+**/node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Optional: ignore .env files everywhere
+**/.env
