@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+
+<h1>🎓 Student Record Manager</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+    </tr>
+
+   <% students.forEach(s => { %>
+        <tr>
+            <td><%= s.id %></td>
+            <td><%= s.name %></td>
+            <td><%= s.age %></td>
+            <td><%= s.course %></td>
+        </tr>
+   <% }) %>
+</table>
+
+<%- include("partials/footer") %>
