@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors"); // Add this line
 const app = express();
+
+app.use(cors()); // Enable CORS 
 
 const studentRoutes = require("./routes/students");
 

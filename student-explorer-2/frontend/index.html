@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>student explorer</h1>
+    <form action="/submit" class="card">
+            <label for="name">Name <input type="text" name="name" id="name" placeholder="name" required></label>
+            <label for="age">Age <input type="number" name="age" id="age" placeholder="age" required></label>
+            <label for="course">course <input type="text" name="course" id="course" placeholder="course" required></label>
+        <button type="submit" class="addUser">Add user</button>
+    </form>
+
+    <input type="text" name="filterByCourse" id="filterByCourse" placeholder="filterByCourse">
+    
+    <div class="studentList"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -48,12 +48,15 @@ function updateUserbyId(req, res){
     let user = students.find(s => s.id === parseInt(id));
 
     if(!user) return res.status(404).send("user not found");
+    let initialName = user.name;
+    let initialAge = user.age;
+    let initialcourse = user.course;
 
     const {name, age, course} = req.body;
     user.id = parseInt(id);
-    user.name = name;
-    user.age = age;
-    user.course = course;
+    user.name = name || initialName;
+    user.age = age || initialAge;
+    user.course = course || initialcourse;
 
     res.json({message:"user updated successfully", user:user});
 }
