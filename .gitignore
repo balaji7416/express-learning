@@ -7,3 +7,5 @@ Thumbs.db
 
 # Optional: ignore .env files everywhere
 **/.env
+
+backend/data/db.json
